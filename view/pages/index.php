@@ -20,19 +20,29 @@
 
 <body>
 <div class="container-sm">
-    <div class="row justify-content-center">
-        <div class="cells">
-            <button type="submit" class="cell">X</button>
-            <button type="submit" class="cell">X</button>
-            <button type="submit" class="cell">X</button>
-            <button type="submit" class="cell">X</button>
-            <button type="submit" class="cell">X</button>
-            <button type="submit" class="cell">X</button>
-            <button type="submit" class="cell">X</button>
-            <button type="submit" class="cell">X</button>
-            <button type="submit" class="cell">X</button>
+    <form action="/handlers/submit-cell.php" method="post">
+        <div class="row justify-content-center">
+            <div class="cells">
+
+                <style>
+                    .cell:hover:before{
+                        content: 'X';
+                        font-size: 100px;
+                    }
+                </style>
+
+                <button type="submit" class="cell" name="number" value=""></button>
+                <button type="submit" class="cell" name="number" value=""></button>
+                <button type="submit" class="cell" name="number" value=""></button>
+                <button type="submit" class="cell" name="number" value=""></button>
+                <button type="submit" class="cell" name="number" value=""></button>
+                <button type="submit" class="cell" name="number" value=""></button>
+                <button type="submit" class="cell" name="number" value=""></button>
+                <button type="submit" class="cell" name="number" value=""></button>
+                <button type="submit" class="cell" name="number" value=""></button>
+            </div>
         </div>
-    </div>
+    </form>
 </div>
 </body>
 
